@@ -342,7 +342,7 @@ input[type=submit] {
     line-height: 1;
     color: #fff;
     text-align: center;
-    text-shadow: 5px 1px 1px #333
+    text-shadow: 2px 1px 1px #333
 }
 
 .page-footer__text-link {
@@ -654,7 +654,7 @@ screen and (max-height:480px) {
     text-align: left;
     text-decoration: none;
     color: #fff;
-    text-shadow: 2px 1px 1px #333;
+    text-shadow: 1px 1px 1px #333;
 }
 
 .contact-me-link:hover {
@@ -709,5 +709,5 @@ screen and (max-height:480px) {
     position: relative;
     align-self: center;
     margin-top: 80px;
-    text-shadow: 2px 1px 1px #333
+    text-shadow: 1px 1px 1px #333
 }
