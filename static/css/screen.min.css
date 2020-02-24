@@ -1,9 +1,74 @@
 @font-face {
-    font-family: 'site-icons';
-    src: url(../fonts/site-icons/font/site-icons.eot);
-    src: url(../fonts/site-icons/font/site-icons.eot#iefix) format("embedded-opentype"), url(../fonts/site-icons/font/site-icons.woff) format("woff"), url(../fonts/site-icons/font/site-icons.ttf) format("truetype"), url(../fonts/site-icons/font/site-icons.svg) format("svg");
+    font font-family: 'montserrat';
+    src: url(../Montserrat-Regular.ttf) format("truetype");
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(..//fonts/material-icons/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../fonts/material-icons/MaterialIcons-Regular.woff2) format('woff2'),
+        url(../fonts/material-icons/MaterialIcons-Regular.woff) format('woff'),
+        url(../fonts/material-icons/MaterialIcons-Regular.ttf) format('truetype'),
+        url(../fonts/material-icons/MaterialIcons-Regular.svg) format('svg');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+@font-face {
+    font-family: 'Socicon';
+    src: url('../fonts/socicon/fonts/Socicon.eot');
+    src: url('../fonts/socicon/fonts/Socicon.eot#iefix') format('embedded-opentype'),
+        url('../fonts/socicon/fonts/Socicon.woff2') format('woff2'),
+        url('../fonts/socicon/fonts/Socicon.ttf') format('truetype'),
+        url('../fonts/socicon/fonts/Socicon.woff') format('woff'),
+        url('../fonts/socicon/fonts/Socicon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.socicon {
+    font-family: 'Socicon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -200,13 +265,13 @@ input[type=submit] {
 .page-header__title {
     display: block;
     margin: 0 auto;
-    font-family: "PT Sans", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "montserrat", Tahoma, Verdana, Arial, sans-serif;
     font-size: 60px;
     font-weight: 700;
     line-height: 1;
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 2px #333
+    text-shadow: 5px 1px 2px #333
 }
 
 .page-content {
@@ -215,7 +280,7 @@ input[type=submit] {
     width: 100%;
     margin-top: 50vh;
     margin-bottom: 50vh;
-    background-color: #fff
+    background-color: rgb(255, 255, 255);
 }
 
 .page-content__main {
@@ -271,19 +336,19 @@ input[type=submit] {
 .page-footer__text {
     display: block;
     margin: 0 auto 15px;
-    font-family: "PT Sans", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "montserrat", Tahoma, Verdana, Arial, sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 1;
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 1px #333
+    text-shadow: 5px 1px 1px #333
 }
 
 .page-footer__text-link {
     display: inline-block;
     margin: 0 auto;
-    font-family: "PT Sans", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "montserrat", Tahoma, Verdana, Arial, sans-serif;
     font-size: inherit;
     line-height: inherit;
     color: inherit;
@@ -357,16 +422,15 @@ input[type=submit] {
 }
 
 .gallery__preview-image {
-    width: auto;
-    height: auto;
-
+    height: 100%;
     overflow: hidden;
 }
 
 .gallery__preview-image img {
     display: block;
-    width: 100%;
-    min-height: 100%
+    /* width: 100%; */
+    height: 100%;
+    min-height: 100%;
 }
 
 .gallery__preview-caption {
@@ -392,7 +456,7 @@ input[type=submit] {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: rgba(44, 62, 80, .9);
+    background-color: rgba(0, 0, 0, 0.849);
     opacity: 0;
     -webkit-transition: opacity .5s;
     transition: opacity .5s
@@ -418,7 +482,7 @@ input[type=submit] {
 .gallery__preview-title {
     display: block;
     margin: 0 auto 20px;
-    font-family: "PT Sans", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "montserrat", Tahoma, Verdana, Arial, sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 1;
@@ -434,7 +498,7 @@ input[type=submit] {
 .gallery__preview-link {
     display: block;
     margin: 0 auto 10px;
-    font-family: "PT Sans", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "montserrat", Tahoma, Verdana, Arial, sans-serif;
     font-size: 18px;
     line-height: 1;
     text-align: left;
@@ -442,24 +506,29 @@ input[type=submit] {
     color: #fff
 }
 
+
 .gallery__preview-link:hover {
     text-decoration: underline
 }
 
+
+
 .gallery__preview-link:not(:last-of-type) {
     margin-right: 20px
 }
+
 
 .gallery__preview-link_role_original:before,
 .gallery__preview-link_role_author:before,
 .gallery__preview-link_role_photographer:before {
     display: inline-block;
     margin-right: 10px;
-    font-family: "site-icons";
+    font-family: "Socicon";
     font-size: 18px;
     line-height: 1;
     vertical-align: baseline
 }
+
 
 .gallery__preview-link:hover .gallery__preview-link_role_original:before,
 .gallery__preview-link:hover .gallery__preview-link_role_author:before,
@@ -467,16 +536,20 @@ input[type=submit] {
     text-decoration: none
 }
 
+
+
 .gallery__preview-link_role_original:before {
-    content: "\e804"
+    content: "\e01a"
 }
+
 
 .gallery__preview-link_role_author:before {
-    content: "\e805"
+    content: "\e032"
 }
 
+
 .gallery__preview-link_role_photographer:before {
-    content: "\e806"
+    content: "\e060"
 }
 
 @media screen and (max-width:2560px) {
@@ -509,8 +582,8 @@ screen and (max-height:640px) {
     }
 
     .gallery__isle-inner {
-        -webkit-box-shadow: 0 2px 20px -2px rgba(0, 0, 0, .4);
-        box-shadow: 0 2px 20px -2px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 2px 20px -2px rgb(0, 0, 0);
+        box-shadow: 0 2px 20px -2px rgb(0, 0, 0);
         -webkit-border-radius: 5px;
         border-radius: 5px
     }
@@ -563,4 +636,78 @@ screen and (max-height:480px) {
     .gallery__preview-title {
         font-size: 22px
     }
+}
+
+.contact-me-links {
+    display: inline-block;
+    text-align: center
+}
+
+
+.contact-me-link {
+    display: block;
+    margin: 0 auto 10px;
+    font-family: "montserrat", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 1px 1px #333;
+}
+
+.contact-me-link:hover {
+    text-decoration: underline;
+}
+
+.contact-me-link:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+
+.facebook:before,
+.instagram:before,
+.twitter:before {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "Socicon";
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: baseline
+}
+
+.contact-me-link:hover .facebook:before,
+.contact-me-link:hover .instagram:before,
+.contact-me-link:hover .twitter:before {
+    text-decoration: none
+}
+
+
+.facebook:before {
+    content: "\e028";
+}
+
+.instagram:before {
+    content: "\e044";
+}
+
+.twitter:before {
+    content: "\e08d";
+}
+
+.copyright-message{
+    display: block;
+    /* margin: 0 auto 10px; */
+    font-family: "montserrat", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    align-self: center;
+    margin-top: 80px;
+    text-shadow: 2px 1px 1px #333
 }
