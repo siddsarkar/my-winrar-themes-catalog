@@ -299,7 +299,6 @@ input[type=submit] {
     left: 0;
     z-index: 0;
     height: 50vh;
-    overflow: hidden;
     background-color: #ccc;
     background-image: url(../images/blocks/page-footer/page-footer_bg.jpg);
     background-repeat: no-repeat;
@@ -722,6 +721,5 @@ screen and (max-height:480px) {
     color: #fff;
     position: relative;
     align-self: center;
-    margin-top: 80px;
     text-shadow: 2px 1px 1px #333
 }
