@@ -280,7 +280,8 @@ input[type=submit] {
     width: 100%;
     margin-top: 50vh;
     margin-bottom: 50vh;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url(../images/blocks/gallery/new/Black\ matte\ texture\ wallpaper\ Auto\ desktop\ background\ Computer.jpg);
 }
 
 .page-content__main {
@@ -342,7 +343,7 @@ input[type=submit] {
     line-height: 1;
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 1px #333
+    text-shadow: 5px 1px 1px #333
 }
 
 .page-footer__text-link {
@@ -640,7 +641,8 @@ screen and (max-height:480px) {
 
 .contact-me-links {
     display: inline-block;
-    text-align: center
+    /* text-align: center; */
+    justify-content: center;
 }
 
 
@@ -654,7 +656,7 @@ screen and (max-height:480px) {
     text-align: left;
     text-decoration: none;
     color: #fff;
-    text-shadow: 1px 1px 1px #333;
+    text-shadow: 2px 1px 1px #333;
 }
 
 .contact-me-link:hover {
@@ -665,7 +667,8 @@ screen and (max-height:480px) {
     margin-right: 20px;
 }
 
-
+.github:before,
+.deviantart:before,
 .facebook:before,
 .instagram:before,
 .twitter:before {
@@ -677,6 +680,8 @@ screen and (max-height:480px) {
     vertical-align: baseline
 }
 
+.contact-me-link:hover .github:before,
+.contact-me-link:hover .deviantart:before,
 .contact-me-link:hover .facebook:before,
 .contact-me-link:hover .instagram:before,
 .contact-me-link:hover .twitter:before {
@@ -696,6 +701,14 @@ screen and (max-height:480px) {
     content: "\e08d";
 }
 
+.deviantart:before {
+    content: "\e01a";
+}
+
+.github:before {
+    content: "\e032"
+}
+
 .copyright-message{
     display: block;
     /* margin: 0 auto 10px; */
@@ -709,5 +722,5 @@ screen and (max-height:480px) {
     position: relative;
     align-self: center;
     margin-top: 80px;
-    text-shadow: 1px 1px 1px #333
+    text-shadow: 2px 1px 1px #333
 }
