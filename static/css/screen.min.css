@@ -299,6 +299,7 @@ input[type=submit] {
     left: 0;
     z-index: 0;
     height: 50vh;
+    overflow: hidden;
     background-color: #ccc;
     background-image: url(../images/blocks/page-footer/page-footer_bg.jpg);
     background-repeat: no-repeat;
@@ -343,7 +344,7 @@ input[type=submit] {
     line-height: 1;
     color: #fff;
     text-align: center;
-    text-shadow: 5px 1px 1px #333
+    text-shadow: 2px 1px 1px #333
 }
 
 .page-footer__text-link {
